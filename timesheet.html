@@ -1,0 +1,40 @@
+import datetime
+
+start_time = datetime.datetime(2022, 1, 1, 10, 0, 0)
+end_time = datetime.datetime(2022, 1, 1, 11, 30, 0)
+duration = end_time - start_time
+print(duration) # output: 1:30:00
+file_in = input("\nEnter timesheet file name: ")	# Input File file_out = input("Enter name for report file: ")	# Output File
+
+# Open input and output files file = open(file_in)
+out = open(file_out,'w')
+
+
+# Read lines from input file lines = file.readlines()
+
+# Variable to hold weekly sum weekly = 0
+
+# Get each row from input file for line in lines:
+# Variable to hold total hours worked (each day) total = 0
+
+
+# Split each hour by space hours = line.strip().split()
+
+# Get each time value in float type # Maintain running sum
+for time in hours:
+time = float(time[:len(time)-1]) total += time
+
+# Output total time out.write('{:.2f}h |'.format(total))
+
+# Add total for 1 day in weekly total weekly += total
+
+# Output hours for time in hours:
+time = float(time[:len(time)-1]) out.write(' {:.2f}h'.format(time))
+out.write('\n')
+
+
+# Print weekly total
+out.write('\nWeekly Total: {:.2f}h'.format(weekly))
+
+
+print("\nDone writing totals to "+file_out)

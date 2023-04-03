@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+.login{
+background-color: aqua; width: 20%;
+height: 30%;
+padding: 15%;
+margin: 10%;
+right: 5%;
+background-image:img;
+},
+</style>
+</head>
+<body>
+<div class="login">
+<center>
+<h1 style="color: rgb(255, 0, 255);">LOGIN HERE</h1> <br>
+<!-- <form text-align="left"> -->
+<div style="color: rgb(4, 0, 255); font-size: large;"> Project Id : &nbsp; &nbsp;<input type=text placeholder="Project
+Id"><br><b><br><br></b></div>
+
+
+</div>
+ 
+<div style="color: rgb(4, 0, 255);font-size: large;"> Employee Id :
+<input type="password" placeholder="employee id"><br><br></div>
+<button style="color: rgb(255, 0, 0);background-color: wheat;">Login</button>
+
+
+</form>
+</body>
+
+</html>
+
+
+import random
+
+
+def generate_Eid():
+
+
+return ''.join([str(random.randint(0, 9)) for i in range(6)])
+
+
+def generate_Pid():
+
+
+return ''.join([str(random.randint(0, 9)) for i in range(6)])
+
+
+employee_id = generate_Eid() print("Employee ID:", employee_id)
+
+project_id = generate_Pid() print("Project ID:", project_id)
+
+
+public class Employee {
+
+String lastName = null;
+
+String firstName = null; double ID;
+
+public Employee(String lastName, String firstName, double ID){ this.lastName = lastName;
+this.firstName = firstName; this.ID = ID;
+}
+
+
+public String empStat(){
+return "Last Name: " + lastName + "First Name: " + firstName + "ID" + ID;
+}
+
+
+}
+public class MainEmployee {
+
+
+public static void main(String args[]){
+
+
+Employee nub1 = new Employee ("Griffin", "Rama", 000001); System.out.println(nub1);
+Employee nub2 = new Employee ("Griffin", "Siva", 000002); System.out.println(nub2);
+Employee nub3 = new Employee ("Griffin", "Jadadeesh", 000003); System.out.println(nub3);
+Employee nub4 = new Employee ("Griffin", "Vijay", 000004); System.out.println(nub4);
+}
+}
